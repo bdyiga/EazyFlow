@@ -3,6 +3,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPRegressor
 from datetime import datetime, timedelta
 
+
 class TrafficLightAI:
     def __init__(self):
         self.model = MLPRegressor(hidden_layer_sizes=(100, 50), max_iter=1000)
@@ -65,5 +66,6 @@ def main():
     print(f"Vehicle count: {current_data['vehicle_count']}")
     print(f"Predicted optimal green light duration: {predicted_green_time:.2f} seconds")
 
+# Call the function.
 if __name__ == "__main__":
     main()
