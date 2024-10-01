@@ -38,7 +38,7 @@ def simulate_traffic():
     now = datetime.now()
     return {
         'timestamp': now,
-        'vehicle_count': np.random.randint(0, 50)
+        'vehicle_count': np.random.randint(0, 600)
     }
 
 def main():
@@ -51,7 +51,7 @@ def main():
         timestamp = start_date + timedelta(minutes=30*i)
         historical_data.append({
             'timestamp': timestamp,
-            'vehicle_count': np.random.randint(0, 50),
+            'vehicle_count': np.random.randint(0, 600),
             'optimal_green_time': np.random.randint(30, 120)
         })
     
